@@ -1,0 +1,83 @@
+{
+	"name": "everywhere",
+	"version": "1.0.0",
+	"author": [
+		"[https://skins.wmflabs.org skins.wmflabs.org v.3.0]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Skin:Everywhere",
+	"descriptionmsg": "everywhere-skin-desc",
+	"namemsg": "skinname-everywhere",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.41.0"
+	},
+	"ValidSkinNames": {
+		"everywhere": {
+			"class": "SkinMustache",
+			"args": [
+				{
+					"name": "everywhere",
+					"responsive": true,
+					"toc": true,
+					"messages": [
+						"everywhere-no-categories",
+						"otherlanguages",
+						"sitetitle",
+						"search",
+						"tagline"
+					],
+					"styles": [
+						"codex-styles",
+						"skins.everywhere.styles"
+					],
+					"scripts": [
+						"skins.everywhere"
+					]
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Everywhere": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"skins.everywhere.styles": {
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
+			"features": {
+				"normalize": true,
+				"elements": true,
+				"content-tables": true,
+				"content-links": true,
+				"content-media": true,
+				"content-links-external": false,
+				"interface-message-box": true,
+				"interface-category": true,
+				"toc": true
+			},
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"styles": [
+				"resources/skin.less"
+			]
+		},
+		"skins.everywhere": {
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"packageFiles": [
+				"resources/skin.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Everywhere"
+	},
+	"ResourceModuleSkinStyles": {},
+	"manifest_version": 2
+}

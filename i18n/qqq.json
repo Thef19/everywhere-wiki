@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"..."
+		]
+	},
+	"skinname-everywhere": "{{optional}}",
+	"everywhere-skin-desc": "{{desc|what=skin|name=everywhere|url=https://www.mediawiki.org/wiki/Skin:everywhere}}",
+	"everywhere-no-categories": "Message to show when no categories available"
+}

@@ -1,0 +1,77 @@
+/** ResourceLoaderSkinModule: normalize,elements,content-tables,content-links,content-media,interface-message-box,interface-category,toc */
+@media print {
+	@import './print.less';
+}
+
+@font-face {
+	font-family: 'Degular';
+	src: url(https://static.cdn.everywhere.game/wiki/Degular-Regular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'Degular';
+	src: url(https://static.cdn.everywhere.game/wiki/Degular-Semibold.woff) format('woff');
+	font-weight: 600;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'Degular Display';
+	src: url(https://static.cdn.everywhere.game/wiki/DegularDisplay-Bold.woff) format('woff');
+	font-weight: 600;
+	font-style: normal
+}
+
+html {
+	margin: 0;
+	padding: 0 0 20px;
+}
+
+body {
+	//max-width: 800px;
+	//margin: 0 auto;
+	font-family: @font-family;
+}
+
+main {
+	padding: 1em;
+
+	& ~ nav,
+	& ~ footer {
+		padding: 1em;
+	}
+}
+
+@media screen {
+	html {
+		background: @background-color-base;
+	}
+
+	body {
+		background: @background-color-article;
+	}
+
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: @color-base;
+	}
+
+	a {
+		color: @color-link;
+
+		&:visited {
+			color: @color-link--visited;
+		}
+	}
+
+	main {
+		border-bottom: solid 20px @background-color-base;
+	}
+}
