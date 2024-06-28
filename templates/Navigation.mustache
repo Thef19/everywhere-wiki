@@ -1,1 +1,10 @@
-<h1>Navigation</h1>
+<aside class="navigation-menu">
+    {{>Logo}}
+
+    <div class="toggle-list__list">
+        {{#data-portlets-sidebar}}
+            {{#data-portlets-first}}{{>Portlet}}{{/data-portlets-first}}
+            {{#array-portlets-rest}}{{>Portlet}}{{/array-portlets-rest}}
+        {{/data-portlets-sidebar}}
+    </div>
+</aside>

@@ -1,10 +1,14 @@
 <main id="content" class="mw-body">
-	<header class="content__header">
-		{{>ContentIndicators}}
-		{{>ContentHeading}}
-		{{>ContentTagline}}
-		{{>ContentNamespaces}}
-		{{>ContentActions}}
-	</header>
-	{{>ContentBody}}
+    <section class="actions">
+        {{>ContentActions}}
+    </section>
+    <section class="content-container">
+        <header class="content__header">
+            {{>ContentIndicators}}
+            {{>ContentHeading}}
+        </header>
+        <section class="content">
+            {{>ContentBody}}
+        </section>
+    </section>
 </main>
