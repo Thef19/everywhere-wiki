@@ -1,6 +1,32 @@
 @import 'mediawiki.skin.variables.less';
 
+#content {
+	grid-area: content;
+
+	h1 {
+		font-weight: bold;
+		color: @background-color-accent;
+	}
+}
+
+.mw-body {
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	p {
+		font-size: 1.3rem;
+	}
+}
+
+.content-container {
+	border: 2px solid @background-color-accent;
+	padding: 1rem;
+	background-color: @background-color-base;
+}
+
 .content {
+
 	&__header {
 		position: relative;
 	}
@@ -60,5 +86,9 @@
 		a {
 			color: @color-thumb;
 		}
+	}
+
+	.catlinks {
+		background-color: transparent;
 	}
 }
