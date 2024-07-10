@@ -1,3 +1,5 @@
+@import "mediawiki.skin.variables";
+
 /** ResourceLoaderSkinModule: normalize,elements,content-tables,content-links,content-media,interface-message-box,interface-category,toc */
 @media print {
 	@import './print.less';
@@ -69,6 +71,10 @@ main {
 
 	a {
 		color: @color-link;
+
+		&.new {
+			color: @color-link-new;
+		}
 
 		&:visited {
 			color: @color-link--visited;
