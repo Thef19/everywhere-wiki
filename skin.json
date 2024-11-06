@@ -9,7 +9,7 @@
 	"namemsg": "skinname-everywhere",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.41.0"
+		"MediaWiki": ">= 1.40.0"
 	},
 	"ValidSkinNames": {
 		"everywhere": {
