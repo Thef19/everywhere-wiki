@@ -25,7 +25,10 @@
 
 .container {
 	display: grid;
-	grid-template: 23px auto 180px / 160px auto [areas] 'sidebar header' 'sidebar content' 'sidebar footer';
+	grid-template: 23px auto 180px / 160px auto;
+	grid-template-areas: 'sidebar header'
+		'sidebar content'
+		'sidebar footer';
 }
 
 @media screen and ( max-width: @width-breakpoint-tablet ) {
